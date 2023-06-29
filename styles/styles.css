@@ -1,0 +1,55 @@
+#title-container,
+#year-container,
+#genre-container {
+	font-family: Teko, sans-serif;
+	font-size: 1.75rem;
+}
+
+#title,
+#year,
+#genre {
+	font-style: italic;
+}
+
+#info-box {
+	margin-top: 50px;
+}
+
+body {
+	text-align: center;
+}
+
+h1 {
+	font-family: Teko, sans-serif;
+	font-size: 2.75rem;
+	font-weight: 500;
+	color: red;
+	border: 6px double turquoise;
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	width: 300px;
+}
+
+img {
+	max-width: 400px;
+}
+
+button {
+	margin-top: 50px;
+	color: white;
+	background-color: red;
+    font-family: Teko, sans-serif;
+	font-size: 1.5rem;
+    font-weight: 300px;
+	padding: 8px;
+    border: none;
+	border-radius: 8px;
+	width: 150px;
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	color: white;
+	background-color: turquoise;
+}
