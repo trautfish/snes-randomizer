@@ -11,12 +11,11 @@
 	font-style: italic;
 }
 
-#info-box {
-	margin-top: 50px;
-}
+
 
 body {
 	text-align: center;
+	background-color: rgb(234, 234, 234);
 }
 
 h1 {
@@ -31,25 +30,38 @@ h1 {
 	width: 300px;
 }
 
-img {
-	max-width: 400px;
-}
-
 button {
 	margin-top: 50px;
+	margin-bottom: 10px;
 	color: white;
 	background-color: red;
     font-family: Teko, sans-serif;
 	font-size: 1.5rem;
-    font-weight: 300px;
+    font-weight: 250px;
 	padding: 8px;
     border: none;
-	border-radius: 8px;
-	width: 150px;
-	transition-duration: 0.4s;
+	border-radius: 10px;
+	width: 120px;
 }
 
 button:hover {
 	color: white;
 	background-color: turquoise;
 }
+
+#image {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(234, 234, 234);
+	object-fit: contain;
+}
+
+image-container {
+    position: flex;
+    display: inline-block;
+}
+
+#info-box {
+    margin-top: 20px;
+}
+
