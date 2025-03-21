@@ -3,16 +3,15 @@ import { test, expect } from '@playwright/test';
 test('has title', async ({ page }) => {
   await page.goto('http://127.0.0.1:5500/');
 
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/SNES Randomizer/);
 });
 
-// test('get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+test('has link that goes to RAWG Games API site', async ({ page }) => {
+  await page.goto('http://127.0.0.1:5500/');
+  
+  await expect(page.getByText('RAWG Games API')).toBeVisible();
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
+  await page.getByText('RAWG Games API').click();
 
-//   // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-// });
+  await expect(page).toHaveURL('https://rawg.io/apidocs');
+});
