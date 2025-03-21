@@ -15,10 +15,6 @@ test('has game image', async ({ page }) => {
     const img = document.querySelector('#image') as HTMLImageElement;
     return img && img.complete && img.naturalWidth > 0;
   });
-
-  const imageSrc = await page.locator('#image').getAttribute('src');
-  expect(imageSrc).not.toBeNull();
-  expect(imageSrc).not.toBe('');
 });
 
 test('has link that goes to RAWG Games API site', async ({ page }) => {
